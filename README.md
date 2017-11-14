@@ -1,5 +1,4 @@
 # MPI
-Implementation of MPI_Send, MPI_Recv
 
 This repository contains mainly 2 files, collect.c and p2p.c.
 It is a mini project where I have 4 processors on a virtual machine and I use point-to-point communication(in p2p.c) and collective operation(in collect.c) to achieve the following requirements:
