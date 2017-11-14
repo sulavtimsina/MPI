@@ -12,6 +12,7 @@ mpiexec --map-by node --mca oob_tcp_if_include eth1 –n 4 ./MYPROG LENGTH
 -	Inside the program, randomly generate the string (only upper-case letters).
 -	Print out the whole string on the screen.
 -	Process 0 distributes substrings to the other three and let them sort the substring.
+-       Process 0 doesn't involve in sorting the substrings. It only sorts the final partly sorted substrings.
 -	Process 3 might receiver a shorter substring
 -	Process 0 collects all sorted substrings and merges them for a completely sorted string.
 -	Print out the sorted string on the screen.
