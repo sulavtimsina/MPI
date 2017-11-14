@@ -21,7 +21,7 @@ So Process 0 generates a random string, divides it into 3 substrings and send/sc
 The use of point to point and collective communication is shown in the code and not how effective sorting methodology can be done.
 
 Compile collect.c using the following command:
-mpicc collect.c -o collect -lm
+<b>mpicc collect.c -o collect -lm</b>
 
 Run the executible collect using the following command:
 mpiexec -iface eth1 -n 4 -host 192.168.100.235,192.168.100.228,192.168.100.236,192.168.100.230 ./collect 100
